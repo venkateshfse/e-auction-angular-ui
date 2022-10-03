@@ -1,0 +1,14 @@
+<mat-nav-list>
+    <div class="menu">
+      <a mat-list-item *ngIf="showSellerMenu" [routerLinkActive]="'active'" [routerLink]="['/seller/dashboard']">
+        <mat-icon class="sidenav-icon">dashboard</mat-icon>Seller Dashboard
+      </a>      
+      <a mat-list-item *ngIf="showBuyerMenu" [routerLinkActive]="'active'" [routerLink]="['/buyer/dashboard']">
+        <mat-icon class="sidenav-icon">dashboard</mat-icon>Buyer Dashboard
+      </a>
+      <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/login']">
+        <mat-icon class="sidenav-icon">exit_to_app</mat-icon>Logout
+      </a>
+    </div>
+  </mat-nav-list>
+  
